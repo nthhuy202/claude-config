@@ -19,3 +19,4 @@
 # skills/synced do claude.ai tự đồng bộ theo tài khoản, không cần git
 /skills/synced/
 /skills/.trash/
+!/setup-plugins.mjs
