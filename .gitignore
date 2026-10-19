@@ -1,0 +1,21 @@
+# Whitelist: chặn tất cả, chỉ mở những gì cần đồng bộ giữa các máy.
+# KHÔNG BAO GIỜ mở: .credentials.json, history.jsonl, projects/, sessions/, plugins/ (cài lại từ settings.json)
+/*
+
+!/.gitignore
+!/settings.json
+!/README.md
+!/LICENSE-teach-skill.txt
+!/CLAUDE.md
+!/keybindings.json
+!/.i-have-adhd-always
+!/.ponytail-active
+
+!/agents/
+!/rules/
+!/commands/
+!/output-styles/
+!/skills/
+# skills/synced do claude.ai tự đồng bộ theo tài khoản, không cần git
+/skills/synced/
+/skills/.trash/

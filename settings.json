@@ -1,0 +1,77 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__pencil",
+      "Bash(npx skills *)",
+      "PowerShell(npx skills *)",
+      "Edit(~/.claude/skills/**)"
+    ],
+    "additionalDirectories": [
+      "~/.claude/skills"
+    ]
+  },
+  "model": "opus",
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "ponytail@ponytail": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "frontend-design@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "i-have-adhd@i-have-adhd": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    },
+    "i-have-adhd": {
+      "source": {
+        "source": "github",
+        "repo": "ayghri/i-have-adhd"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
+  },
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: assumed public — GitHub visibility check was not queryable here, but this repo (santifer/career-ops) is an open-source project per README/CONTRIBUTING (public contribution flow, Discord, good-first-issue links, star count)",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: `.env` file (gitignored) with API keys (GEMINI_API_KEY, OPENROUTER_API_KEY, OPENAI_API_KEY, APIFY_TOKEN, NOTION_ACCESS_TOKEN, GMAIL_CLIENT_ID/SECRET/REFRESH_TOKEN) per .env.example; CI secrets referenced by name only (DISCORD_CONTRIB_WEBHOOK, DISCORD_MANIFESTO_WEBHOOK, GITHUB_TOKEN, LEDGER_TOKEN, SIGNATURES_REVALIDATE_SECRET)",
+      "**Default / protected branches**: unknown — gh visibility/rulesets/branch-protection checks were not queryable here; treat default branch as protected by default",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Host containment**: None configured — assume Claude Code runs on an ordinary developer machine with open internet",
+      "**Source control**: The trusted repo (santifer/career-ops, github.com) and its origin remote only — no additional orgs configured",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: `.env` and `.envrc` (API keys / credentials); user's own CV/profile data, application tracker, and personal job-search data under `data/` and `config/profile.yml` (personal data) — share only with the repo owner (santifer), never commit to the repo",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: software development on career-ops, a personal/open-source job-search automation tool (mixed personal + public-OSS use)",
+      "**Trusted repo**: santifer/career-ops (github.com), the working directory's origin remote — public repo, so only this repo's own work belongs in commits/pushes here; personal data (CV, tracker, job search info) must not be pushed even though the repo is public",
+      "**Org-specific CLIs**: None configured — repo uses standard node/npm scripts (doctor, or:scan, or:pipeline, or:eval, or:apply, verify, lint, pdf, etc.)",
+      "routine under santifer/career-ops prefix: package.json scripts (doctor, or:*, verify, lint, normalize, dedup, merge, reconcile, pdf, jd:similarity, img-to-pdf, cover-letter, cv:verify-facts, test:cv-visual*, sync-check) are routine project tooling"
+    ]
+  }
+}
