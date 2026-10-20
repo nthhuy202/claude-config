@@ -169,3 +169,8 @@ table.data tr:nth-child(even) td { background: rgba(255,255,255,.015); }
   pre, .callout, .quiz, table.data th { background: #f5f5f5 !important; color: #111 !important; }
   a { color: #06c; }
 }
+
+/* Hint ladder: <details><summary>💡 Gợi ý N</summary>...</details> — mở dần từng gợi ý */
+details { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 16px; margin: 10px 0; }
+details summary { cursor: pointer; font-weight: 600; color: var(--accent-2); }
+details[open] summary { margin-bottom: 6px; }
