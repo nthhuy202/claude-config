@@ -176,6 +176,15 @@ Thư mục `<thư-mục-skill>/assets/` chứa nguồn chân lý:
    - **Cần THƯ MỤC MỚI chưa tồn tại** (vd `nested/src/`): PHẢI có lệnh `mkdir -p <đường-dẫn>` tường minh trong
      một `.code-block` bash riêng, đặt trước khối code của file — bước này không thể tự suy ra được.
 
+8. **Trích dẫn tiếng Anh → kèm bản dịch ngay sau**: `"<nguyên văn>" (<em>dịch: ...</em>)`. Giữ nguyên văn để người học
+   đối chiếu, bản dịch để hiểu tường minh. Áp cho mọi câu trích từ docs/MDN/spec trong phần chữ (không cần cho prompt terminal).
+9. **Soạn TRƯỚC trọn module, khoá bài chưa tới.** Khi người học yêu cầu: soạn hết các bài trong module hiện tại (verify như A19),
+   mục lục để bài chưa tới ở dạng `span.soon` + `🔒 đã soạn · mở khi xong Bài NN`; nút "Sau →" của bài đang học vẫn `disabled`.
+   Người học nộp bài đúng hết + đã sửa hết lỗi → MỞ KHOÁ bài kế ngay (đổi sang `<a>` + mở "Sau →"), không bắt chờ soạn.
+   Bài soạn trước dựa trên lời giải tham khảo của bài trước → lúc mở khoá, đối chiếu code thật của người học, lệch thì sửa đoạn
+   mở đầu bài kế trước khi mở. Trạng thái trong mục lục: đã học = `<span class="lcount badge done">✓ đã học</span>`,
+   đang học = `<span class="lcount badge now">▶ đang học</span>` (dùng class có sẵn, không thêm CSS).
+
 ## Lưu ý
 - **Git "commit theo bài" — ĐÃ được ủy quyền cho khoá /teach.** Quy trình mặc định: **chỉ khi workspace có git repo + remote**,
   sau khi người học xác nhận **hoàn thành một bài** (và trước khi sang bài mới), thì **commit + push** phần thuộc bài đó.
